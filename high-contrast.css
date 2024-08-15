@@ -1,0 +1,35 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    background-color: #000;
+    color: #fff;
+}
+
+form {
+    background: #222;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+label {
+    color: #fff;
+}
+
+input, select, button {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: #000;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="high-contrast.css" id="high-contrast-stylesheet" disabled>
+</head>
+<body>
+    <h1>Formulario de Datos Personales</h1>
+    <form id="personal-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <label for="pais">País de Residencia:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <!-- Agrega más opciones según lo necesites -->
+        </select><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button onclick="toggleContrast()">Alternar Alto Contraste</button>
+
+    <script>
+        function toggleContrast() {
+            const normalStyle = document.getElementById('theme-stylesheet');
+            const highContrastStyle = document.getElementById('high-contrast-stylesheet');
+            normalStyle.disabled = !normalStyle.disabled;
+            highContrastStyle.disabled = !highContrastStyle.disabled;
+        }
+    </script>
+</body>
+</html>
